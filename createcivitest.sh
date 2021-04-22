@@ -160,8 +160,8 @@ createConfigFile() {
   printf "\n" >> $CONFIG_FILE
 
   printf "# Location of the test image (to clearly see you are on a test site)\n" >> $CONFIG_FILE
-  printf "TEST_IMAGE_SOURCE=./tmp/logo.png" 
-  printf "TEST_IMAGE_TARGET=ABSOLUTE-PATH-TO-THEME-FOLDER"
+  printf "TEST_IMAGE_SOURCE=./tmp/logo.png\n" >> $CONFIG_FILE
+  printf "TEST_IMAGE_TARGET=ABSOLUTE-PATH-TO-THEME-FOLDER\n" >> $CONFIG_FILE
   printf "\n" >> $CONFIG_FILE
 
   showErrorAndQuit "Created the settings file $CONFIG_FILE. Review the settings!"
